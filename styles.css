@@ -1,0 +1,478 @@
+:root {
+    --color1: #ff9897;
+    --color2: #f650a0;
+    --color3: #0eb8f5;
+    --color4: #ebf4bf;
+    --color5: #e0d2eb;
+    --color6: #f7b3b0;
+    --color7: #8141a4;
+    --color8: #ffdd7e;
+    --color9: #dd7f05;
+}
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Inter Tight', sans-serif;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        * {
+          scroll-behavior: smooth;
+        }
+      }
+
+    body {
+        margin: 0%;
+        background-color: rgb(3, 3, 3);
+        font-size: 25px;
+        color: whitesmoke;
+    }
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    a:visited {
+        color: whitesmoke;
+    }
+
+    a:hover {
+        color: var(--color3)
+    }
+
+    #header {
+        background-color: rgba(20, 20, 20, 0.781);
+        backdrop-filter: blur(15px);
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        column-gap: 1%;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+
+    #header-img {
+        display: none;
+    }
+
+    #apple-logo {
+        grid-column-start: 1;
+        font-size: 70px;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+        left: 10%;
+    }
+
+    #nav-bar {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        grid-column-start: 3;
+    }
+
+    #nav-bar ul {
+        list-style-type: none;
+        height: 100%;
+        margin: 0;
+        padding-inline-start: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 70px;
+        padding-top: 60px;
+        font-size: 8vw;
+        background: linear-gradient(rgb(243, 243, 243), rgb(46, 46, 46));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .paragraph {
+        width: 67%;
+        font-size: 4vw;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    #first-paragraph {
+        background: linear-gradient(var(--color5), var(--color7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 15%;
+    }
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #presentamos {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        font-size: 5.5vw;
+        background: linear-gradient(var(--color1), var(--color2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .second-paragraph {
+        margin-left: 8%;
+    }
+
+    .div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #video {
+        width: 727px;
+        height: 409px;
+    }
+
+    #screen {
+        margin-top: 15%;
+    }
+    
+    #pantalla {
+        font-size: 2em;
+        margin-left: 10%;
+    }
+
+    #brillante {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 5em;
+        background: linear-gradient(var(--color8), var(--color9));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #deteccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #deteccion-img {
+        padding-inline-start: 10vw;
+        height: 50vw;
+    }
+
+    #third-paragraph {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2em;
+        width: 650px;
+        padding-inline-start: 10vw;
+        padding-right: 5vw;
+    }
+
+    #sistema {
+        font-size: 5.5vw;
+        background: linear-gradient(var(--color6), var(--color7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #cameras {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 1vw;
+        grid-template-rows: 1fr 12vw;
+    }
+
+    .nombre {
+        font-size: 2vw;
+        margin-bottom: 0%;
+    }
+
+    .cam-des {
+        font-size: 1.5vw;
+        margin-top: 0%;
+    }
+
+    #gran-angular {
+        grid-column: 2 / 3;
+        grid-row-start: 2;
+    }
+
+    #teleobjetivo {
+        grid-column: 3 / 4;
+        grid-row-start: 1;
+    }
+
+    #ultra-gran {
+        grid-column: 4 / 5;
+        grid-row-start: 2;
+    }
+
+    #bionic {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .inline {
+        width: 50%;
+    }
+
+    #cerebro, #a16 {
+        display: block;
+    }
+
+    #cerebro {
+        margin-block-start: 2vw;
+        margin-block-end: 2vw;
+        font-size: 5.5vw;
+    }
+
+    #a16 {
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+
+    #a16-img {
+        padding-inline-start: 5vw;
+        display: inline-flex;
+        overflow: hidden;
+    }
+
+    .comprar {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #com {
+        grid-column: 2 / 6;
+    }
+
+    #se-pasa {
+        font-size: 11vw;
+        margin-bottom: 0%;
+    }
+
+    #pro-y-max {
+        font-size: 3vw;
+    }
+
+    #buy {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10%;
+    }
+
+    #desde {
+        grid-column-start: 1;
+        overflow: visible;
+        font-size: 2vw;
+    }
+
+    #C {
+        grid-column-start: 2;
+        font-size: 2vw;
+    }
+
+    #newsletter-link {
+        margin-bottom: 70px;
+    }
+
+    #nl-div {
+        text-align: center;
+        margin-top: 15vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        padding: 3vw;
+        background-color: rgb(19, 19, 19);
+    }
+
+    #nl {
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+
+    #nl-div p {
+        font-size: 3vw;
+    }
+
+    #email {
+        background-color: rgb(3, 3, 3);
+        color: whitesmoke;
+        border: 1px solid rgb(3, 3, 3);
+        width: 50%;
+        height: 4vh;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        #video {
+            width: 70vw;
+            height: 40vw;
+        }
+
+        #deteccion-img {
+            padding-inline-start: 5vw;
+        }
+
+        #third-paragraph {
+            font-size: 1.8em;
+            width: 600px;
+            padding-inline-start: 8vw;
+        }
+    }
+
+    @media only screen and (max-width: 1040px) {
+
+        #pantalla {
+            font-size: 4vw;
+            margin-left: 5%;
+            margin-bottom: 0;
+        }
+    
+        #brillante {
+            font-size: 10vw;
+        }
+
+        #deteccion-img {
+            padding-inline-start: 3vw;
+        }
+
+        #third-paragraph {
+            font-size: 1.5em;
+            width: 500px;
+            padding-inline-start: 8vw;
+        }
+    }
+
+    @media only screen and (max-width: 860px) {
+
+        .second-paragraph {
+            margin-left: 4%;
+            font-size: 3.3vw;
+        }
+
+        #deteccion {
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #deteccion-img {
+            padding-inline-start: 0%;
+            height: 600px;
+        }
+
+        #third-paragraph {
+            width: 70vw;
+            padding-inline-start: 0%;
+            font-size: 4vw;
+            padding-right: 0;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        #header {
+            height: 10vh;
+            grid-template-columns: 1fr 1fr 4fr;
+        }
+
+        #apple-logo {
+            grid-column-start: 1;
+            font-size: 8vh;
+        }
+
+        #nav-bar {
+            font-size: 3.5vw;
+        }
+
+        #cameras {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nombre {
+            font-size: 18px;
+        }
+
+        .cam-des {
+            font-size: 14px;
+        }
+
+        #bionic {
+            display: initial;
+        }
+    
+        .inline {
+            padding: 5%;
+            width: 100%;
+        }
+    
+        #cerebro, #a16 {
+            display: block;
+        }
+    
+        #a16-img {
+            display: block;
+            padding-inline-start: 0%;
+            margin: auto;
+            width: 60vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .paragraph {
+            width: 90%;
+            margin: 0%;
+        }
+
+        #first-paragraph {
+            width: 100%;
+            margin-block-start: 0%;
+            margin-block-end: 0%;
+        }
+
+        .comprar {
+            display: initial;
+            padding: 5%;
+        }
+
+        #se-pasa, #pro-y-max, #buy {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        #pro-y-max {
+            font-size: 4.5vw;
+        }
+
+        #desde, #C {
+            font-size: 4vw;
+        }
+    }
+
+    @media only screen and (max-width: 490px) {
+        #deteccion-img {
+            width: 65vw;
+            height: fit-content;
+        }
+    }
